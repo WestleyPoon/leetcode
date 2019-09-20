@@ -9,10 +9,10 @@ var reverse = function(x) {
         negative = true;
     }
     while (x) {
-        let end = x%10;
+        let end = Math.abs(x%10);
         result *= 10;
         result += end;
-        x = Math.floor(x/10);
+        x = Math.trunc(x/10);
     }
     if (negative) {
         return result * -1;
