@@ -14,6 +14,9 @@ var reverse = function(x) {
         result += end;
         x = Math.trunc(x/10);
     }
+    if (result > (2**31)-1) {
+        return 0;
+    }
     if (negative) {
         return result * -1;
     }
@@ -23,3 +26,7 @@ var reverse = function(x) {
 console.log(reverse(123));
 console.log(reverse(-123));
 console.log(reverse(120));
+
+// Easy
+// Time: 80ms, beats 41.87%
+// Memory: 35.6MB, beats 91.67%
