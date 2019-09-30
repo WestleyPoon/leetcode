@@ -13,3 +13,7 @@ var fib = function(N) {
 console.log(fib(2));
 console.log(fib(3));
 console.log(fib(4));
+
+// Easy
+// Time: 80ms, beats 14.17%
+// Memory: 34.2MB
