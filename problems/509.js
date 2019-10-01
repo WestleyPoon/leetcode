@@ -7,7 +7,20 @@ var fib = function(N) {
         return N;
     }
 
-    return fib(N-1) + fib(N-2);
+    // return fib(N-1) + fib(N-2);
+
+    let two = 0;
+    let one = 1;
+    let sum = 0;
+    let counter = N - 2;
+
+    while (N) {
+        two = one;
+        one = two + one;
+        N--;
+    }
+
+    return two + one;
 };
 
 console.log(fib(2));
