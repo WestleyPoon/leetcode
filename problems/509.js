@@ -12,12 +12,11 @@ var fib = function(N) {
     let n1 = 0;
     let n2 = 0;
 
-    N = (N - 1);
+    N = (N - 2);
     while (N-- > 0) {
         let new1 = n1 + n2;
         n2 = n2;
         n1 = new1;
-        N--
     }
 
     return n1 + n2;
