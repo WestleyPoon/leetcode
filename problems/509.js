@@ -9,18 +9,18 @@ var fib = function(N) {
 
     // return fib(N-1) + fib(N-2);
 
-    let two = 0;
-    let one = 1;
-    let sum = 0;
-    let counter = N - 2;
+    let n1 = 0;
+    let n2 = 0;
 
-    while (N) {
-        two = one;
-        one = two + one;
-        N--;
+    N = (N - 1);
+    while (N-- > 0) {
+        let new1 = n1 + n2;
+        n2 = n2;
+        n1 = new1;
+        N--
     }
 
-    return two + one;
+    return n1 + n2;
 };
 
 console.log(fib(2));
