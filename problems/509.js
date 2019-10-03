@@ -3,23 +3,16 @@
  * @returns {number}
  */
 var fib = function(N) {
-    if (N < 2) {
-        return N;
+    const nums = {
+        0: 0,
+        1: 1
     }
 
-    // return fib(N-1) + fib(N-2);
-
-    let n1 = 0;
-    let n2 = 0;
-
-    N = (N - 2);
-    while (N-- > 0) {
-        let new1 = n1 + n2;
-        n2 = n2;
-        n1 = new1;
+    for (let i = 2; i <= N; i++) {
+        nums[i] = nums[i-1] + nums[i-2];
     }
 
-    return n1 + n2;
+    return nums[N];
 };
 
 console.log(fib(2));
