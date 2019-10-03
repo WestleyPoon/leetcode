@@ -20,5 +20,5 @@ console.log(fib(3));
 console.log(fib(4));
 
 // Easy
-// Time: 80ms, beats 14.17%
-// Memory: 34.2MB
+// Time: 48ms, beats 91.83%
+// Memory: 33.8MB
