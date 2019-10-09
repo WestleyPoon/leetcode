@@ -13,3 +13,7 @@ var reverseString = function(s) {
 
 console.log(reverseString(["h","e","l","l","o"]));
 console.log(reverseString(["h","a","n","n","a","H"]));
+
+// Easy
+// Time: 116ms, beats 53.60%
+// Memory: 46.7MB
