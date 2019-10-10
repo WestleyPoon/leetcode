@@ -4,7 +4,7 @@
  */
 var majorityElement = function(nums) {
     const numCount = {};
-    const floor = Math.floor(nums.length);
+    const floor = Math.floor(nums.length / 2);
 
     for (let i = 0; i < nums.length; i++) {
         if (numCount[nums[i]]) {
@@ -26,3 +26,7 @@ var majorityElement = function(nums) {
 
 console.log(majorityElement([3,2,3]));
 console.log(majorityElement([2,2,1,1,1,2,2]));
+
+// Easy
+// Time: 52ms, beats 97.99%
+// Memory: 37.8MB, beats 28.57%
