@@ -21,3 +21,7 @@ var strStr = function(haystack, needle) {
 
 console.log(strStr("hello", "ll"));
 console.log(strStr("aaaaa", "bba"));
+
+// Easy
+// Time: 56ms, beats 66.65%
+// Memory: 36.1MB, beats 10.72%
